@@ -1,6 +1,6 @@
 MPS-Fuzz is a fine-grain coverage fuzzer.  
   
-Abstract of MPS-Fuzz: 
+Abstract of MPS-Fuzz:    
 MPS-Fuzz proposes the structure of a basic block unit with multiple predecessors and successors (referred to as MPS).   
 Then, a fine-grained coverage method called MPS-Fuzz is designed based on the MPS structure.   
 In this approach, it is convenient to exclude basic blocks involving loop structures when determining MPS units, which helps reduce seed homogeneity.   
