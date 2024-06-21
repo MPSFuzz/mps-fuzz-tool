@@ -20,7 +20,7 @@ This is due to modifications in the instrumentation that cause issues with the c
 *****************************************  
   
 Then, the compilation process for the program under test is as follows:   
-$ CC=/path/to/afl/afl-clang-fast ./configure   
+$ CC=/path/to/afl/afl-clang-fast  && ./configure   
 $ make clean all  
   
 fuzzing command:   
