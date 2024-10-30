@@ -12,12 +12,6 @@ MPS-Fuzz is implemented based on AFL, and therefore, its usage is similar to tha
 First, the compilation process MPS-Fuzz is as follows:   
 $ cd /youpath/MPS-Fuzz && make   
 $ cd ./llvm_mode && make   
-If you encounter the following error while compiling afl-clang-fast, do not worry.   
-This is due to modifications in the instrumentation that cause issues with the comparison validation in AFL's native test-instru.c, but it does not affect usage.  
-  
-*****************************************  
-[*] Testing the CC wrapper and instrumentation output... unset AFL_USE_ASAN AFL_USE_MSAN; AFL_QUIET=1 AFL_INST_RATIO=100 AFL_PATH=. ./afl-gcc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH="/usr/local/lib/afl" -DDOC_PATH="/usr/local/share/doc/afl" -DBIN_PATH="/usr/local/bin" test-instr.c -o test-instr -ldl echo 0 | ./afl-showmap -m none -q -o .test-instr0 ./test-instr make: *** [Makefile:92: test_build] Error 2  
-*****************************************  
   
 Then, the compilation process for the program under test is as follows:   
 $ CC=/path/to/afl/afl-clang-fast  && ./configure   
