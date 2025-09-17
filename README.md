@@ -55,4 +55,7 @@ MPS-Fuzz proposes the structure of a basic block unit with multiple predecessors
   /you-path/mps-fuzz/afl-fuzz -d -i $FUZZ_IN -o $FUZZ_OUT -- ./your-targets @@
   ```
   
-  
+## 0-day found by MPS-Fuzz
+* A null pointer reference on gpac2.5.0
+state: confirmed and fixed; issue number: #3340; url: https://github.com/gpac/gpac/issues/3340 (the issue has been closed)
+
