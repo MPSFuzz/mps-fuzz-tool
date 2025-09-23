@@ -60,4 +60,8 @@ MPS-Fuzz proposes the structure of a basic block unit with multiple predecessors
 
 state: confirmed and fixed; issue number: #3340; url: https://github.com/gpac/gpac/issues/3340 (the issue has been closed)
 
+* A bug with incomplete fixes on xpdf4.05
+
+state: confirmed and will be fixed in next version xpdf4.06; url: https://forum.xpdfreader.com/viewtopic.php?t=45228
+
 
