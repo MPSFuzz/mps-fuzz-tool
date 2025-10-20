@@ -58,10 +58,11 @@ MPS-Fuzz proposes the structure of a basic block unit with multiple predecessors
 ## 0-day found by MPS-Fuzz
 * A null pointer reference on gpac2.5.0
 
-state: confirmed and fixed; issue number: #3340; url: https://github.com/gpac/gpac/issues/3340 (the issue has been closed)
+state: confirmed and fixed; issue number: #3340; url: https://github.com/gpac/gpac/issues/3340 (the issue has been closed). Newly, it has been assigned CVE-2025-61559
 
 * A bug with incomplete fixes on xpdf4.05
 
 state: confirmed and will be fixed in next version xpdf4.06; url: https://forum.xpdfreader.com/viewtopic.php?t=45228
+
 
 
